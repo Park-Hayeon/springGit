@@ -56,7 +56,7 @@ public class MemberController {
 	@RequestMapping("modifyInfo")
 	public String modifyInfo(MemberDTO dto) throws Exception{
 		int result = dao.update(dto);
-		return "redirect:member/mypage";
+		return "member/mypage";
 	}
 	
 	@RequestMapping("memberout")
